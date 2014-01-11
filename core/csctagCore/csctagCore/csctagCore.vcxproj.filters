@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\json-c">
+      <UniqueIdentifier>{b49da6f7-93c6-4366-9946-13d35757dddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cscope">
+      <UniqueIdentifier>{3e299aa5-624c-4fd3-8d69-cafe0063aeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ctags">
+      <UniqueIdentifier>{43026479-64f9-4d94-a008-56189bcb9b3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{587e3c65-0992-4853-bbc9-8b69ec12d1a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\json-c">
+      <UniqueIdentifier>{14caf7f5-5fad-4d66-b63f-8b135b54192d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cscope">
+      <UniqueIdentifier>{471e52c0-6996-4248-8a51-4d989afba793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ctags">
+      <UniqueIdentifier>{a7aaca6b-f8ea-4e55-ac16-cb92791c18e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\external">
+      <UniqueIdentifier>{b006f8a2-acbe-4b87-b6d1-b9703de6198d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\json-c\arraylist.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\debug.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\json_object.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\json_tokener.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\json_util.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\linkhash.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\json-c\printbuf.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\alloc.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\basename.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\build.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\command.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\compath.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\crossref.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\dir.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\display.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\edit.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\exec.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\find.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\help.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\history.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\input.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\invlib.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\lex.yy.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\logdir.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\lookup.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\main.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\mouse.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\mygetenv.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\mypopen.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\vpaccess.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\vpfopen.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\vpinit.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\vpopen.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cscope\y.tab.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sort\cache.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sort\extsort.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sort\file.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sort\os_win.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sort\page.c">
+      <Filter>Source Files\cscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\pulginMain.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\json-c\arraylist.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\bits.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\config.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\debug.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\json.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\json_object.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\json_object_private.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\json_tokener.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\json_util.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\linkhash.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\json-c\printbuf.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sort\internal.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sort\sort.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\alloc.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\build.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\config.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\constants.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\global.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\invlib.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\library.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\lookup.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\scanner.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\version.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\vp.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cscope\y.tab.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\externals\regex.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

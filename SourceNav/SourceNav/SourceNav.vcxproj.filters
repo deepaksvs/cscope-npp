@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{e551bdaf-4ade-48d2-9330-2b3f1efad9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cscope">
+      <UniqueIdentifier>{d0e9f1cf-f9e1-4186-9ca9-1a51723afa18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cscope\sort">
+      <UniqueIdentifier>{dbe7ee5c-f342-49fc-865c-1c593d90fbc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cscope\src">
+      <UniqueIdentifier>{7657ed4c-f430-415c-9d75-1440ba86a71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\json-c">
+      <UniqueIdentifier>{d6647517-a488-451c-8211-0389c33356b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cscope">
+      <UniqueIdentifier>{7f8ec9ea-b276-4d29-ab65-59083b51a753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ctags">
+      <UniqueIdentifier>{5c5090f0-bcc6-4508-994b-96e9ff27aef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\json-c">
+      <UniqueIdentifier>{1334e198-3ae9-4a9c-9048-351fe49f218c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\external">
+      <UniqueIdentifier>{e9a5866d-2777-4460-a7e3-7f0ed99bd1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{64a92a0a-fe90-4e91-b86f-d20df05cece1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DockingFeature">
+      <UniqueIdentifier>{8f4394ce-181a-48c8-8e24-d0b6eee62a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DockingFeature">
+      <UniqueIdentifier>{d95fac72-b5a4-4dc6-81f4-04f2dd835d4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\menuCmdID.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Notepad_plus_msgs.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PluginDefinition.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PluginInterface.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scintilla.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\resource.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\externals\regex.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\externals\pluginMain.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\arraylist.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\bits.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\config.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\debug.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\json.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\json_object.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\json_object_private.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\json_tokener.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\json_util.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\linkhash.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\json-c\printbuf.h">
+      <Filter>Header Files\json-c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\alloc.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\build.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\config.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\constants.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\global.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\invlib.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\library.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\lookup.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\scanner.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\version.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\vp.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\y.tab.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\sort\internal.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\sort\sort.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cscope\cscope.h">
+      <Filter>Header Files\cscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\Docking.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\DockingDlgInterface.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\dockingResource.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\GoToLineDlg.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\StaticDialog.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\input.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\InputToJumpDlg.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\ImageListSet.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\Notepad_plus_rc.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\SciSubClassWrp.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\stdafx.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\SysMsg.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\ToolBar.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\URLCtrl.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\Window.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DockingFeature\PosListDlg.h">
+      <Filter>Header Files\DockingFeature</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\core\json-c\arraylist.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\debug.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\json_object.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\json_tokener.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\json_util.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\linkhash.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\json-c\printbuf.c">
+      <Filter>Source Files\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\sort\cache.c">
+      <Filter>Source Files\cscope\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\sort\extsort.c">
+      <Filter>Source Files\cscope\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\sort\file.c">
+      <Filter>Source Files\cscope\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\sort\os_win.c">
+      <Filter>Source Files\cscope\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\sort\page.c">
+      <Filter>Source Files\cscope\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\alloc.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\basename.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\build.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\command.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\compath.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\crossref.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\dir.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\display.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\edit.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\exec.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\find.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\help.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\history.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\input.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\invlib.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\lex.yy.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\logdir.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\lookup.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\main.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\mouse.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\mygetenv.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\mypopen.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\vpaccess.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\vpfopen.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\vpinit.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\vpopen.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\cscope\y.tab.c">
+      <Filter>Source Files\cscope\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\main\pulginMain.c">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NppPluginDemo.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PluginDefinition.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util.c">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DockingFeature\InputToJumpDlg.cpp">
+      <Filter>Source Files\DockingFeature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DockingFeature\GoToLineDlg.cpp">
+      <Filter>Source Files\DockingFeature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DockingFeature\StaticDialog.cpp">
+      <Filter>Source Files\DockingFeature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DockingFeature\SysMsg.cpp">
+      <Filter>Source Files\DockingFeature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DockingFeature\PosListDlg.cpp">
+      <Filter>Source Files\DockingFeature</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\DockingFeature\goLine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\input.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\symbol.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

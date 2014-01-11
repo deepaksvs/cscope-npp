@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41DB5C6F-77EE-46A3-9776-DEFE9B78CB11}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SourceNav</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SOURCENAV_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\core\json-c;..\..\core\sort;..\..\core\cscope;..\..\core\ctags;..\..\core\externals;..\..\core\main;..\..\;..\..\DockingFeature;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\core\externals;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>regex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SOURCENAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\core\cscope\alloc.h" />
+    <ClInclude Include="..\..\core\cscope\build.h" />
+    <ClInclude Include="..\..\core\cscope\config.h" />
+    <ClInclude Include="..\..\core\cscope\constants.h" />
+    <ClInclude Include="..\..\core\cscope\cscope.h" />
+    <ClInclude Include="..\..\core\cscope\global.h" />
+    <ClInclude Include="..\..\core\cscope\invlib.h" />
+    <ClInclude Include="..\..\core\cscope\library.h" />
+    <ClInclude Include="..\..\core\cscope\lookup.h" />
+    <ClInclude Include="..\..\core\cscope\scanner.h" />
+    <ClInclude Include="..\..\core\cscope\version.h" />
+    <ClInclude Include="..\..\core\cscope\vp.h" />
+    <ClInclude Include="..\..\core\cscope\y.tab.h" />
+    <ClInclude Include="..\..\core\externals\pluginMain.h" />
+    <ClInclude Include="..\..\core\externals\regex.h" />
+    <ClInclude Include="..\..\core\json-c\arraylist.h" />
+    <ClInclude Include="..\..\core\json-c\bits.h" />
+    <ClInclude Include="..\..\core\json-c\config.h" />
+    <ClInclude Include="..\..\core\json-c\debug.h" />
+    <ClInclude Include="..\..\core\json-c\json.h" />
+    <ClInclude Include="..\..\core\json-c\json_object.h" />
+    <ClInclude Include="..\..\core\json-c\json_object_private.h" />
+    <ClInclude Include="..\..\core\json-c\json_tokener.h" />
+    <ClInclude Include="..\..\core\json-c\json_util.h" />
+    <ClInclude Include="..\..\core\json-c\linkhash.h" />
+    <ClInclude Include="..\..\core\json-c\printbuf.h" />
+    <ClInclude Include="..\..\core\sort\internal.h" />
+    <ClInclude Include="..\..\core\sort\sort.h" />
+    <ClInclude Include="..\..\DockingFeature\Docking.h" />
+    <ClInclude Include="..\..\DockingFeature\DockingDlgInterface.h" />
+    <ClInclude Include="..\..\DockingFeature\dockingResource.h" />
+    <ClInclude Include="..\..\DockingFeature\GoToLineDlg.h" />
+    <ClInclude Include="..\..\DockingFeature\ImageListSet.h" />
+    <ClInclude Include="..\..\DockingFeature\input.h" />
+    <ClInclude Include="..\..\DockingFeature\InputToJumpDlg.h" />
+    <ClInclude Include="..\..\DockingFeature\Notepad_plus_rc.h" />
+    <ClInclude Include="..\..\DockingFeature\PosListDlg.h" />
+    <ClInclude Include="..\..\DockingFeature\resource.h" />
+    <ClInclude Include="..\..\DockingFeature\SciSubClassWrp.h" />
+    <ClInclude Include="..\..\DockingFeature\StaticDialog.h" />
+    <ClInclude Include="..\..\DockingFeature\stdafx.h" />
+    <ClInclude Include="..\..\DockingFeature\SysMsg.h" />
+    <ClInclude Include="..\..\DockingFeature\ToolBar.h" />
+    <ClInclude Include="..\..\DockingFeature\URLCtrl.h" />
+    <ClInclude Include="..\..\DockingFeature\Window.h" />
+    <ClInclude Include="..\..\menuCmdID.h" />
+    <ClInclude Include="..\..\Notepad_plus_msgs.h" />
+    <ClInclude Include="..\..\PluginDefinition.h" />
+    <ClInclude Include="..\..\PluginInterface.h" />
+    <ClInclude Include="..\..\Scintilla.h" />
+    <ClInclude Include="..\..\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\core\cscope\alloc.c" />
+    <ClCompile Include="..\..\core\cscope\basename.c" />
+    <ClCompile Include="..\..\core\cscope\build.c" />
+    <ClCompile Include="..\..\core\cscope\command.c" />
+    <ClCompile Include="..\..\core\cscope\compath.c" />
+    <ClCompile Include="..\..\core\cscope\crossref.c" />
+    <ClCompile Include="..\..\core\cscope\dir.c" />
+    <ClCompile Include="..\..\core\cscope\display.c" />
+    <ClCompile Include="..\..\core\cscope\edit.c" />
+    <ClCompile Include="..\..\core\cscope\exec.c" />
+    <ClCompile Include="..\..\core\cscope\find.c" />
+    <ClCompile Include="..\..\core\cscope\help.c" />
+    <ClCompile Include="..\..\core\cscope\history.c" />
+    <ClCompile Include="..\..\core\cscope\input.c" />
+    <ClCompile Include="..\..\core\cscope\invlib.c" />
+    <ClCompile Include="..\..\core\cscope\lex.yy.c" />
+    <ClCompile Include="..\..\core\cscope\logdir.c" />
+    <ClCompile Include="..\..\core\cscope\lookup.c" />
+    <ClCompile Include="..\..\core\cscope\main.c" />
+    <ClCompile Include="..\..\core\cscope\mouse.c" />
+    <ClCompile Include="..\..\core\cscope\mygetenv.c" />
+    <ClCompile Include="..\..\core\cscope\mypopen.c" />
+    <ClCompile Include="..\..\core\cscope\vpaccess.c" />
+    <ClCompile Include="..\..\core\cscope\vpfopen.c" />
+    <ClCompile Include="..\..\core\cscope\vpinit.c" />
+    <ClCompile Include="..\..\core\cscope\vpopen.c" />
+    <ClCompile Include="..\..\core\cscope\y.tab.c" />
+    <ClCompile Include="..\..\core\json-c\arraylist.c" />
+    <ClCompile Include="..\..\core\json-c\debug.c" />
+    <ClCompile Include="..\..\core\json-c\json_object.c" />
+    <ClCompile Include="..\..\core\json-c\json_tokener.c" />
+    <ClCompile Include="..\..\core\json-c\json_util.c" />
+    <ClCompile Include="..\..\core\json-c\linkhash.c" />
+    <ClCompile Include="..\..\core\json-c\printbuf.c" />
+    <ClCompile Include="..\..\core\main\pulginMain.c" />
+    <ClCompile Include="..\..\core\sort\cache.c" />
+    <ClCompile Include="..\..\core\sort\extsort.c" />
+    <ClCompile Include="..\..\core\sort\file.c" />
+    <ClCompile Include="..\..\core\sort\os_win.c" />
+    <ClCompile Include="..\..\core\sort\page.c" />
+    <ClCompile Include="..\..\DockingFeature\GoToLineDlg.cpp" />
+    <ClCompile Include="..\..\DockingFeature\InputToJumpDlg.cpp" />
+    <ClCompile Include="..\..\DockingFeature\PosListDlg.cpp" />
+    <ClCompile Include="..\..\DockingFeature\StaticDialog.cpp" />
+    <ClCompile Include="..\..\DockingFeature\SysMsg.cpp" />
+    <ClCompile Include="..\..\NppPluginDemo.cpp" />
+    <ClCompile Include="..\..\PluginDefinition.cpp" />
+    <ClCompile Include="..\..\util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\DockingFeature\goLine.rc" />
+    <ResourceCompile Include="..\..\input.rc" />
+    <ResourceCompile Include="..\..\symbol.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
